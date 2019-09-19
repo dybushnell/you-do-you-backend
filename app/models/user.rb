@@ -1,4 +1,4 @@
 class User < ApplicationRecord
   has_many :messages
-  has_one_attached :photo
+  has_one_attached :avatar
 end
