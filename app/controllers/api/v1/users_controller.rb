@@ -12,9 +12,8 @@ class Api::V1::UsersController < ApplicationController
   def create
     user = User.create(
       first_name: params[:first_name],
-      last_name: params[:last_name],
       email: params[:email],
-      birthday: params[:birthday],
+      birthdate: params[:birthdate],
       location: params[:location],
       relationship_goal: params[:relationship_goal],
       blood_type: params[:blood_type],
@@ -27,9 +26,8 @@ class Api::V1::UsersController < ApplicationController
     user = User.find(params[:id])
     user.update(
       first_name: params[:first_name],
-      last_name: params[:last_name],
       email: params[:email],
-      birthday: params[:birthday],
+      birthdate: params[:birthdate],
       location: params[:location],
       relationship_goal: params[:relationship_goal],
       blood_type: params[:blood_type],
