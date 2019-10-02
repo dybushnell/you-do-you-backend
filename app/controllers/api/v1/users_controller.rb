@@ -39,6 +39,6 @@ class Api::V1::UsersController < ApplicationController
   def destroy
     user = User.find(params[:id])
     user.delete
-    render json: user
+    # render json: user
   end
 end
